@@ -41,4 +41,15 @@
     CGContextStrokePath(ctx);
 }
 
+// Override default initializer to make the background clear
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    
+    if (self) {
+        [self setBackgroundColor:[UIColor clearColor]];
+    }
+    return self;
+}
+
 @end
