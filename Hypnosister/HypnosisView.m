@@ -20,7 +20,25 @@
     CGRect bounds = [self bounds];
     
     // Draw a circle in the center of the bounds rectangle (size of the current view)
+    // Figure out the center
+    CGPoint center;
+    center.x = bounds.origin.x + bounds.size.width / 2.0;
+    center.y = bounds.origin.y + bounds.size.height / 2.0;
     
+    // Set the radius to be nearly as big as the view
+    float maxRadius = hypot(bounds.size.width, bounds.size.height) / 4.0;
+    
+    // Set the thickness of the line (context) to be 10 pts
+    CGContextSetLineWidth(ctx, 10);
+    
+    // Set the color of the line to be gray
+    CGContextSetRGBFillColor(ctx, .6, .6, .6, 1);
+    
+    // Add shape - this doesn't draw the shape yet
+    CGContextAddArc(ctx, center.x, center.y, maxRadius, 0.0, M_PI * 2, YES);
+    
+    // PERFORM THE DRAWING INSTRUCTION
+    CGContextStrokePath(ctx);
 }
 
 @end
