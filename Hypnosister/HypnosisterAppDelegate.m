@@ -7,12 +7,24 @@
 //
 
 #import "HypnosisterAppDelegate.h"
+#import "HypnosisView.h"
 
 @implementation HypnosisterAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    // Frame for HypnosisView
+    CGRect viewFrame = CGRectMake(160, 240, 100, 150);
+    
+    // Initialize the view and set the background color
+    HypnosisView *view = [[HypnosisView alloc] initWithFrame:viewFrame];
+    [view setBackgroundColor:[UIColor redColor]];
+    
+    // Set our HypnosisView as a subview of window
+    [[self window] addSubview:view];
+    
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
