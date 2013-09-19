@@ -19,6 +19,7 @@
 		C47BD02017EBA66700354F32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47BD00817EBA66700354F32 /* UIKit.framework */; };
 		C47BD02817EBA66700354F32 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C47BD02617EBA66700354F32 /* InfoPlist.strings */; };
 		C47BD02A17EBA66700354F32 /* HypnosisterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C47BD02917EBA66700354F32 /* HypnosisterTests.m */; };
+		C47BD03517EBA86D00354F32 /* HypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = C47BD03417EBA86D00354F32 /* HypnosisView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		C47BD02517EBA66700354F32 /* HypnosisterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HypnosisterTests-Info.plist"; sourceTree = "<group>"; };
 		C47BD02717EBA66700354F32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C47BD02917EBA66700354F32 /* HypnosisterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnosisterTests.m; sourceTree = "<group>"; };
+		C47BD03317EBA86D00354F32 /* HypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HypnosisView.h; sourceTree = "<group>"; };
+		C47BD03417EBA86D00354F32 /* HypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypnosisView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 			children = (
 				C47BD01317EBA66700354F32 /* HypnosisterAppDelegate.h */,
 				C47BD01417EBA66700354F32 /* HypnosisterAppDelegate.m */,
+				C47BD03317EBA86D00354F32 /* HypnosisView.h */,
+				C47BD03417EBA86D00354F32 /* HypnosisView.m */,
 				C47BD01617EBA66700354F32 /* Images.xcassets */,
 				C47BD00B17EBA66700354F32 /* Supporting Files */,
 			);
@@ -242,6 +247,7 @@
 			files = (
 				C47BD01117EBA66700354F32 /* main.m in Sources */,
 				C47BD01517EBA66700354F32 /* HypnosisterAppDelegate.m in Sources */,
+				C47BD03517EBA86D00354F32 /* HypnosisView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
